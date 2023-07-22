@@ -5,3 +5,26 @@ test :
   - expected_data:
       success: working
 
+
+location :
+  method: get
+  end_point: /api/v1/location
+  payload:
+  - expected_data:
+      status: 200
+      data:
+        - location_id: 1
+          name: Sarath
+          location_description: location_description
+
+
+location_post :
+  method: post
+  end_point: /api/v1/location
+  payload:
+    - name: Sarath
+      location_description: location_description
+      expected_data:
+        location:
+          location_description: location_description
+          name: Sarath
