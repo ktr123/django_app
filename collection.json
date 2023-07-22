@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "c73797a2-444d-4375-b818-ee6e34ba22f5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12573617"
+	},
+	"item": [
+		{
+			"name": "register_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"username\": \"kothatarak333@gmail.com\",\n    \"email\": \"kothatarak333@gmail.com\",\n    \"useremail\": \"kothatarak333@gmail.com\",\n    \"password\": \"2222\",\n    \"password2\": \"2222\",\n    \"first_name\": \"\",\n    \"last_name\": \"\",\n    \"qahub_user\": \"\",\n    \"access_roles\": \"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register_user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register_user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "location_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDE1OTA4LCJpYXQiOjE2OTAwMTIzMDgsImp0aSI6IjYwNzg0NmNiNWE1ZDQ5YWNhNTI0YzkyMmYzZjMzYzk0IiwidXNlcl9pZCI6MX0.GXh1LQWIgErn4gyBLZ1XqzVnCwZfhSohMCCS0da-97Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"name\": \"Sarath\",\n   \"location_description\": \"location_description\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "location_get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDE1MjM5LCJpYXQiOjE2OTAwMTE2MzksImp0aSI6IjVkYjcyMzJkNzZkMTRmZDE4ODU4MjNjMjMxM2RkODQ0IiwidXNlcl9pZCI6MX0.DwIbuVlKICXfKwpu3zlFvjY_BJba_n_dCuAddfi7lJM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "department_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDE5NzkxLCJpYXQiOjE2OTAwMTYxOTEsImp0aSI6IjUwMjU5MzgyNTU2YzQ0MDA5MTVjNmUyZGQxY2VhNjdhIiwidXNlcl9pZCI6MX0.un-jsd8W8jx8b6JvjD5pg9ilZBKzxFdd9mv5WWtergo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"department_name\": \"ece\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "department_get_request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDE5OTgzLCJpYXQiOjE2OTAwMTYzODMsImp0aSI6ImFjY2ZjNzI3NGI3YzQwMTI4MzQxNDM2NzViYmY3YmRiIiwidXNlcl9pZCI6MX0.rSiW34jf0tOWoG9WxvaxKSdidb8Ub8Bo06isXZrD3S8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDE5Njk1LCJpYXQiOjE2OTAwMTYwOTUsImp0aSI6IjgyNmRmZDM0NTM1NzRkZDA4NTFmMGFmZDFjNWExNDM2IiwidXNlcl9pZCI6MX0.5-TG5s5GicRt1TBmK2oUgEXyZcnchhbv_ayjwfhJK28",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"category_name\": \"aaa\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department/4/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department",
+						"4",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category_get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDIwMTA3LCJpYXQiOjE2OTAwMTY1MDcsImp0aSI6IjljOTU1YWQ1YWIyMjRkYmZiMTkxNGZmMDQ1NmQxMzBkIiwidXNlcl9pZCI6MX0.OitnIOzj3WWndZsdndoHyp83nSf0ZhbX2LI5_B3C01E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department/4/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department",
+						"4",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sub_cat_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDIwNTgzLCJpYXQiOjE2OTAwMTY5ODMsImp0aSI6Ijg5YzM1OGI4MDNmNTQzZTVhYTkxMDk3YWQ1OWMwNmRmIiwidXNlcl9pZCI6MX0.H_cqirM-wmezXH2MEPT0eJC_MdRaaet8DAjsgRPn7ao",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"subcategory_name\": \"subcategory_name\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department/4/category/1/subcategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department",
+						"4",
+						"category",
+						"1",
+						"subcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sub_category_get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDIwNzE1LCJpYXQiOjE2OTAwMTcxMTUsImp0aSI6ImM5MTZmY2Q4NzIzYjQxY2Y4NWE3NDdlM2Y1ZTI5M2Y3IiwidXNlcl9pZCI6MX0.XI_fiBSwYIY8wDZxTIoZnJLnpkkpGi7sHDBp9c2e7u0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department/4/category/1/subcategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department",
+						"4",
+						"category",
+						"1",
+						"subcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sub_cat_spec",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDIxMjcwLCJpYXQiOjE2OTAwMTc2NzAsImp0aSI6IjNiMTczY2I2ZmQ2NDQxMDg4M2EyN2I1YTFkMWE1NjVjIiwidXNlcl9pZCI6MX0.ZIt9F3tQeSW_zi-cz4BsA16XKFLCxTks_2irToPA1gk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/location/1/department/4/category/1/subcategory/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"location",
+						"1",
+						"department",
+						"4",
+						"category",
+						"1",
+						"subcategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sku_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDQ1MDE4LCJpYXQiOjE2OTAwNDE0MTgsImp0aSI6IjYxMWJhMzVjYTE5NzQ2YjQ5Yzk4YTE5Njg3MDQwZDFiIiwidXNlcl9pZCI6MX0.2Jma6RUl8a8Iu9KQXCU-_k1f2DXjZNgC0EI4OBYE-uM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"sku_id\": 1,\n  \"sku_name\": \"sku\",\n  \"location\": 1,\n  \"department\": 4,\n  \"category\": 1,\n  \"subcategory\": 1}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sku",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sku_get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMDQ1NDg3LCJpYXQiOjE2OTAwNDE4ODcsImp0aSI6ImU4NjA0MjM3ZmZjYzRiMTdiNjUyM2UzZTBiZmE1NDZiIiwidXNlcl9pZCI6MX0.-0m7PdOMzAYbqRzywCVbr74Dh5JOJTO6pCBtFduLMUA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sku",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sku"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

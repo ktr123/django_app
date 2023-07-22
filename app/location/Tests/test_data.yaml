@@ -1,0 +1,7 @@
+test :
+  method: get
+  end_point: /test
+  payload:
+  - expected_data:
+      success: working
+
