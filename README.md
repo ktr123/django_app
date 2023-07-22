@@ -8,7 +8,7 @@ Install Required Packages:
 
 Open a terminal or command prompt and navigate to the project directory.
 Run the following command to download all the required packages for the project:
-Copy code
+
 python -m pip install -r requirements.txt
 Install PostgreSQL and Create a Database:
 
@@ -21,18 +21,18 @@ Replace the database name and password with the ones you created in the PostgreS
 Migrate the Database:
 
 In the terminal or command prompt, run the following command to apply the database migrations:
-Copy code
+
 python manage.py migrate
 Start the Server:
 
 To launch the server, run the following command:
-Copy code
+
 python manage.py runserver
 Execute Unit Test Cases:
 
 To run all unit test cases written in the YAML file, execute the following command:
 arduino
-Copy code
+
 pytest --execute-all=true
 Postman API Collection:
 
