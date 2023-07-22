@@ -28,10 +28,8 @@ Start the Server:
 To launch the server, run the following command:
 
 python manage.py runserver
-Execute Unit Test Cases:
 
 To run all unit test cases written in the YAML file, execute the following command:
-arduino
 
 pytest --execute-all=true
 Postman API Collection:
