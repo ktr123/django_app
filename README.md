@@ -39,8 +39,3 @@ https://api.postman.com/collections/9401503-cdfb4aca-57e2-46a8-bb78-96bd50c2b79d
 Alternatively, you can import the collection from the collection.json file provided in the project.
 Now you should have the Django Rest Framework server up and running, ready to handle your requests!
 
-
-
-
-
-Regenerate response
